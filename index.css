@@ -33,7 +33,7 @@ body{
     background: var(--background-color);
 }
 section{
-    padding: 2rem 9%;
+    padding: 4rem 9%;
 }
 h1{
     line-height: 1.8;
@@ -72,14 +72,15 @@ h1{
     background: var(--main-color);
     color: var(--white);
 }
-/* .header .logo{
+.header .logo{
     font-size: 2.5rem;
     font-weight: bolder;
     color: var(--black);
-} */
+}
 .header .logo i{
     font-size: 2.5rem;
     color: var(--main-color);
+    padding: 0 .5rem;
 }
 .header{
     position: fixed;
@@ -319,10 +320,17 @@ h1{
     flex-basis: 50%;
     min-width: 300px;
 }
+.col-2 .image{
+    max-width: 60rem;
+    max-height: 60rem;
+    padding: 2rem;
+    display: block;
+    margin: 2rem;
+}
 .col-2 .img{
-    max-width: 100%;
-    padding: 2rem 0;
-    margin: 1rem;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
 .col-2 .btn{
     margin: 0 auto;
