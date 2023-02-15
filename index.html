@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./index.css"/>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+      tinymce.init({
+        selector: 'textarea',
+        height: 500,
+        menubar: false,
+        plugins: [
+          'advlist autolink lists link image charmap print preview anchor',
+          'searchreplace visualblocks code fullscreen',
+          'insertdatetime media table paste code help wordcount'
+        ],
+        toolbar:
+          'undo redo | formatselect | bold italic backcolor | \
+          alignleft aligncenter alignright alignjustify | \
+          bullist numlist outdent indent | removeformat | help'
+      });
+    </script>
+    <title>Chris's Blog</title>
+</head>
+<body>
+    <header class="header">
+       <span class="logo"><i class="fa-solid fa-gavel"></i></span>
+
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Blogs</a>
+            <a href="#">Services</a>
+            <a href="#">Post</a>
+        </nav>
+
+        <div class="icon">
+            <div class="fa-solid fa-blog" id="blog-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search blog post ...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <form action="" class="login-form login">
+            <h3>login</h3>
+            <input type="email" placeholder="enter your valid email" class="box">
+            <input type="password" placeholder="enter registered password" class="box">
+            <input type="password" placeholder="4 - digits Authentication Pin" class="box">
+            <p>forgotten password? <span>click here</span></p>
+            <p>don't have an account <span id="goto-signup">create now</span></p>
+            <button type="submit" class="btn">Submit</button>
+            <div class="forgotten-pass">
+                <p>forgotten password? Enter your registered mail ...</p>
+                <input type="email" placeholder="We'll send you a mail" class="box">
+                <button class="btn">Send</button>
+            </div>
+        </form>
+        <form action="" class="login-form sign-up">
+            <h3>Sign Up Now</h3>
+            <input type="text" placeholder="enter username" class="box">
+            <input type="email" placeholder="enter your valid email" class="box">
+            <input type="password" placeholder="enter strong password" class="box">
+            <input type="password" placeholder="confirm password" class="box">
+            <div class="file">
+                <input type="file" class="custom-file-input">
+                <img src="./img/user-2.png" alt="default">
+            </div>
+            <p>Already have an account? <span id="goto-login">login now</span></p>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </header>
+    <section class="home" id="home">
+       <div class="row">
+        <div class="col-2">
+            <h1>Organization Introductory Heading</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quas dolores distinctio nihil impedit 
+                accusantium provident recusandae ea molestiae, et modi dicta consequuntur vero error sed, blanditiis
+                 asperiores quisquam vitae eaque! Sed blanditiis deleniti placeat distinctio? Ipsam distinctio culpa nulla.
+            </p>
+            <button class="btn">Explore</button>
+        </div>
+        <div class="col-2">
+            <img class="img" src="./img/image1.png" alt="">
+        </div>
+       </div>
+    </section>
+    <section class="services">
+        <h1 class="heading">Our <span>Services</span></h1>
+        <div class="row">
+            <div class="col-2">
+                <img class="img" src="./img/image1.png" alt="services">
+            </div>
+            <div class="col-2">
+                <span>Let us be your plug for legal services ..</span>
+                <h1>Law Management and Related Legal Services</h1>
+                <div class="services-list">
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa-solid fa-gavel"></i></span>
+                            <div>
+                                <h4>Heading Title</h4>
+                                <p>Lorem ipsum, dolor sit amet 
+                                    consectetur adipisicing elit. Molestias velit
+                                     eligendi tempore quis iste fugiat?</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa-solid fa-gavel"></i></span>
+                            <div>
+                                <h4>Heading Title</h4>
+                                <p>Lorem ipsum, dolor sit amet 
+                                    consectetur adipisicing elit. Molestias velit
+                                     eligendi tempore quis iste fugiat?</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa-solid fa-gavel"></i></span>
+                            <div>
+                                <h4>Heading Title</h4>
+                                <p>Lorem ipsum, dolor sit amet 
+                                    consectetur adipisicing elit. Molestias velit
+                                     eligendi tempore quis iste fugiat?</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa-solid fa-gavel"></i></span>
+                            <div>
+                                <h4>Heading Title</h4>
+                                <p>Lorem ipsum, dolor sit amet 
+                                    consectetur adipisicing elit. Molestias velit
+                                     eligendi tempore quis iste fugiat?</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa-solid fa-gavel"></i></span>
+                            <div>
+                                <h4>Heading Title</h4>
+                                <p>Lorem ipsum, dolor sit amet 
+                                    consectetur adipisicing elit. Molestias velit
+                                     eligendi tempore quis iste fugiat?</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+        <h1 class="heading"> blog <span>posts</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="icons">
+                    <span><i class="fas fa-calendar"></i>1st Oct,2023</span>
+                    <span><i class="fas fa-clock"></i>1:09 pm</span>
+                </div>
+                <img src="img/image1.png" alt="blog-1">
+                <div class="content">
+                    <div class="icons">
+                        <span><i class="fa-solid fa-thumbs-up"></i>203</span>
+                        <span><i class="fa-solid fa-message"></i>14</span>
+                    </div>
+                    <h3>Blog Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi doloribus sint nam dolore sit porro
+                        maxime tempore beatae.
+                   </p>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <span><i class="fas fa-calendar"></i>1st Oct,2023</span>
+                    <span><i class="fas fa-clock"></i>1:09 pm</span>
+                </div>
+                <img src="img/image1.png" alt="blog-1">
+                <div class="content">
+                    <div class="icons">
+                        <span><i class="fa-solid fa-thumbs-up"></i>203</span>
+                        <span><i class="fa-solid fa-message"></i>14</span>
+                    </div>
+                    <h3>Blog Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi doloribus sint nam dolore sit porro
+                         maxime tempore beatae.
+                    </p>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <span><i class="fas fa-calendar"></i>1st Oct,2023</span>
+                    <span><i class="fas fa-clock"></i>1:09 pm</span>
+                </div>
+                <img src="img/image1.png" alt="blog-1">
+                <div class="content">
+                    <div class="icons">
+                        <span><i class="fa-solid fa-thumbs-up"></i>203</span>
+                        <span><i class="fa-solid fa-message"></i>14</span>
+                    </div>
+                    <h3>Blog Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi doloribus sint nam dolore sit porro
+                        maxime tempore beatae.
+                   </p>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses" id="courses">
+        <h1 class="heading">Available <span>Courses</span></h1>
+        <div class="container">
+            <div class="box">
+                <img src="./img/image1.png" alt="course-img">
+                <div class="course-text">
+                    <h3>$200</h3>
+                    <h3>Web Design</h3>
+                    <p>Basic to professional web Design</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/image1.png" alt="course-img">
+                <div class="course-text">
+                    <h3>$200</h3>
+                    <h3>Web Design</h3>
+                    <p>Basic to professional web Design</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/image1.png" alt="course-img">
+                <div class="course-text">
+                    <h3>$200</h3>
+                    <h3>Web Design</h3>
+                    <p>Basic to professional web Design</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/image1.png" alt="course-img">
+                <div class="course-text">
+                    <h3>$200</h3>
+                    <h3>Web Design</h3>
+                    <p>Basic to professional web Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="uploads">
+        <h1 class="heading">Upload <span>Posts</span></h1>
+        <form action="" class="form">
+            <select name="box" id="box" class="box">
+                <option value="blog">Upload to Blog</option>
+                <option value="course">Upload to Courses</option>
+            </select>
+            <input type="text" placeholder="enter post title" class="box">
+            <input type="number" placeholder="enter amout for course in Naira" class="box">
+            <div class="file">
+                <input type="file" class="custom-file-input">
+                <img src="./img/user-2.png" alt="default">
+            </div>
+            <textarea>Upload body</textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+    <section class="users">
+        <h1 class="heading">Registered <span>Users</span></h1>
+        <div class="table">
+            <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>John Smith</td>
+                    <td>30</td>
+                    <td>New York</td>
+                    <td>abc-123@xyz.com.ng</td>
+                  </tr>
+                  <tr>
+                    <td>Jane Doe</td>
+                    <td>25</td>
+                    <td>Los Angeles</td>
+                    <td>abc-123@xyz.com.ng</td>
+                  </tr>
+                  <tr>
+                    <td>Bob Johnson</td>
+                    <td>40</td>
+                    <td>Chicago</td>
+                    <td>abc-123@xyz.com.ng</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+        </div>
+    </section>
+    <section class="comments">
+        <h1 class="heading">Comments <span>Section</span></h1>
+        <div class="row">
+            <div class="col-2">
+                <img class="img" src="./img/image1.png" alt="comment">
+            </div>
+            <div class="col-2">
+                <h3>Post Title Here</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nobis commodi, dolores
+                     ratione sint recusandae. Facilis aut laborum ipsum est repellendus culpa corrupti commodi
+                      earum autem ex! Assumenda inventore ducimus quae ullam consequuntur tempore perferendis 
+                      voluptates, sunt a dolorem quidem excepturi aperiam similique laudantium deleniti ratione.
+                       Sequi et voluptatibus commodi, quos aliquid consectetur. Quibusdam ipsum illo rem, non voluptas,
+                        eveniet cum nihil amet tempore, provident vel ad inventore eius tempora mollitia cumque nesciunt?
+                         Quibusdam inventore, repellendus, saepe maiores voluptates atque obcaecati ipsa esse eveniet, 
+                         reprehenderit
+                     corporis a sunt eos ad minima error eum eaque. Autem, sequi. Molestias voluptas consectetur minus.
+                </p>
+                <div class="comment">
+                    <span>14 comments</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <p>
+                                <span>Uche Victor</span><span>15, Feb, 2022; 10:31 am</span>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                 Provident animi ut veritatis inventore sit autem. Deserunt 
+                                 soluta aperiam sed delectus?
+                            </p>
+                            <img src="./img/img1.jpg" alt="course-img">
+                        </li>
+                        <li>
+                            <p>
+                                <span>Uche Victor</span><span>15, Feb, 2022; 10:31 am</span>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                 Provident animi ut veritatis inventore sit autem. Deserunt 
+                                 soluta aperiam sed delectus?
+                            </p>
+                            <img src="./img/img1.jpg" alt="course-img">
+                        </li>
+                        <li>
+                            <p>
+                                <span>Uche Victor</span><span>15, Feb, 2022; 10:31 am</span>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                 Provident animi ut veritatis inventore sit autem. Deserunt 
+                                 soluta aperiam sed delectus?
+                            </p>
+                            <img src="./img/img1.jpg" alt="course-img">
+                        </li>
+                        <li>
+                            <p>
+                                <span>Uche Victor</span><span>15, Feb, 2022; 10:31 am</span>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                 Provident animi ut veritatis inventore sit autem. Deserunt 
+                                 soluta aperiam sed delectus?
+                            </p>
+                            <img src="./img/img1.jpg" alt="course-img">
+                        </li>
+                        <li>
+                            <p>
+                                <span>Uche Victor</span><span>15, Feb, 2022; 10:31 am</span>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                 Provident animi ut veritatis inventore sit autem. Deserunt 
+                                 soluta aperiam sed delectus?
+                            </p>
+                            <img src="./img/img1.jpg" alt="course-img">
+                        </li>
+                        <li>
+                            <p>
+                                <span>Uche Victor</span><span>15, Feb, 2022; 10:31 am</span>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                 Provident animi ut veritatis inventore sit autem. Deserunt 
+                                 soluta aperiam sed delectus?
+                            </p>
+                            <img src="./img/img1.jpg" alt="course-img">
+                        </li>
+                        <li>
+                            <p>
+                                <span>Uche Victor</span><span>15, Feb, 2022; 10:31 am</span>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                 Provident animi ut veritatis inventore sit autem. Deserunt 
+                                 soluta aperiam sed delectus?
+                            </p>
+                            <img src="./img/img1.jpg" alt="course-img">
+                        </li>
+                        <li>
+                            <p>
+                                <span>Uche Victor</span><span>15, Feb, 2022; 10:31 am</span>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                 Provident animi ut veritatis inventore sit autem. Deserunt 
+                                 soluta aperiam sed delectus?
+                            </p>
+                            <img src="./img/img1.jpg" alt="course-img">
+                        </li>
+                        <li>
+                            <p>
+                                <span>Uche Victor</span><span>15, Feb, 2022; 10:31 am</span>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                 Provident animi ut veritatis inventore sit autem. Deserunt 
+                                 soluta aperiam sed delectus?
+                            </p>
+                            <img src="./img/img1.jpg" alt="course-img">
+                        </li>
+                        <li>
+                            <p>
+                                <span>Uche Victor</span><span>15, Feb, 2022; 10:31 am</span>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                 Provident animi ut veritatis inventore sit autem. Deserunt 
+                                 soluta aperiam sed delectus?
+                            </p>
+                            <img src="./img/img1.jpg" alt="course-img">
+                        </li>
+                        <li>
+                            <p>
+                                <span>Uche Victor</span><span>15, Feb, 2022; 10:31 am</span>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                 Provident animi ut veritatis inventore sit autem. Deserunt 
+                                 soluta aperiam sed delectus?
+                            </p>
+                            <img src="./img/img1.jpg" alt="course-img">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer" id="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About <i class="fa-solid fa-gavel"></i></h3>
+                <p>We're are open and ready for business 24 / 7 Contact us ...</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fas fa-whatsapp"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Dev Team Info <i class="fa-solid fa-computer"></i></h3>
+                <p>We're are open and ready for business 24 / 7 Contact us ...</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fas fa-whatsapp"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Contact Info <i class="fa fa-phone"></i></h3>
+                <span><i class="fa fa-phone"></i>+234 - 8181734574</span>
+                <span><i class="fab fa-whatsapp"></i>+2348181734574</span>
+                <span><i class="fas fa-envelope"></i> peters.soft.network@gmail.com</span>
+                <span><i class="fas fa-map-marker-alt"></i> Trans-Amadi Layout, PH City</span>
+            </div>
+            <div class="box">
+                <h3>Credits <i class="fa-solid fa-check"></i></h3>
+                <span><i class="fa-solid fa-check"></i>UI credits: @Mr Web Designer</span>
+                <span><i class="fa-solid fa-check"></i>UI credits: Pinterest</span>
+                <span><i class="fa-solid fa-check"></i>UI credits: @Dribble.com</span>
+                <span><i class="fa-solid fa-check"></i>Peters Soft Developers</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
