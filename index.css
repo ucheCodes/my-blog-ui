@@ -290,6 +290,13 @@ h1{
     padding: .5rem 0;
     text-align: center;
 }
+ol li{
+    line-height: 1.5;
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    text-align: justify;
+}
 .blogs .box-container .box .content p,p{
     line-height: 1.5;
     color: var(--light-color);
